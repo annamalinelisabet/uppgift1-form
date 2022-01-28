@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bli medlem igen</title>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="left-side">
+            <div class="container">
+                <button class="btn btn-exit d-none"><i class="fas fa-times"></i></button>
+                <h1 class="form-header">Bli medlem</h1>
+                <form id="member-form">
+    
+                    <div class="input-group">
+                        <label for="first-name">FÖRNAMN</label>
+                        <input type="text" id="first-name" class="input" placeholder="Please enter your first name...">
+                        <p class="invalid-text">Error</p>
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">EFTERNAMN</label>
+                        <input type="text" id="last-name" class="input" placeholder="Please enter your last name...">
+                        <p class="invalid-text">Error</p>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" class="input" placeholder="Please enter your email...">
+                        <p class="invalid-text">Error</p>
+                    </div>
+    
+                    <button class="btn btn-submit">REGISTRERA</button>
+                    
+                </form>
+                <form id="edit-form" class="d-none">
+    
+                    <div class="input-group">
+                        <label for="edit-first-name">FÖRNAMN</label>
+                        <input type="text" id="edit-first-name" class="input" placeholder="Please enter your first name...">
+                        <p class="invalid-text">Error</p>
+                    </div>
+                    <div class="input-group">
+                        <label for="edit-last-name">EFTERNAMN</label>
+                        <input type="text" id="edit-last-name" class="input" placeholder="Please enter your last name...">
+                        <p class="invalid-text">Error</p>
+                    </div>
+                    <div class="input-group">
+                        <label for="edit-email">EMAIL</label>
+                        <input type="email" id="edit-email" class="input" placeholder="Please enter your email...">
+                        <p class="invalid-text">Error</p>
+                    </div>
+                        
+                    <button class="btn btn-submit-edit">SPARA</button>
+                </form>
+            </div>
+        </div>
+    
+    
+        <div class="right-side">    
+            <h1 class="member-header">MEDLEMMAR</h1>
+            <ul id="user-list"></ul>
+            <h5 class="member-nr"></h5>    
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+</html>
